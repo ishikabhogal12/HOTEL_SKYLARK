@@ -1,0 +1,163 @@
+<html>
+  <head>
+    <title>
+    AVENUE:GUEST DETAILS
+    </title>
+    <style>
+    ul
+{
+margin-left:0px;
+margin-top:10px;
+list-style: none;
+}
+ul li
+{
+float: left;
+width: 160px;
+height: 40px;
+background-color:mediumpurple;
+opacity:1;
+line-height: 40px;
+text-align: center;
+font-size: 20px;
+margin-right:2px;
+border-radius: 20px;
+border: 4px solid darkblue;
+}
+ul li a
+{
+text-decoration:none;
+color:#000000;
+display:block;
+}
+
+ul li a:hover
+{
+background-color:cornflowerblue  ;
+border-radius: 20px;
+}
+ul li ul li
+{
+display:none;
+font-size: 15px;
+}
+ul li:hover ul li
+{
+display:block;
+}
+h1
+{
+color: black;
+font-weight:bold;
+font-size:50px;
+text-align:center;
+background-color:mediumpurple;
+}
+
+
+.a1 { grid-area: a; }
+.a2 { grid-area: b; }
+.a3 { grid-area: c; }
+.a4 { grid-area: d; }
+.a5 { grid-area: e; }
+.a6 { grid-area: f; }
+.a7 { grid-area: g; }
+.a8 { grid-area: h; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'a a c c'
+    'b f c c'
+    'd e g h';
+    
+  grid-gap: 10px;
+  background-color:mediumpurple;
+  padding: 10px;
+}
+.grid-container> div {
+  background-color:plum;
+  
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+</STYLE>
+  </head>
+  <body>
+
+<ul>
+<li><a><a href=" index.html">HOME</a></a></li>
+<li><a><a href="login.html">SERVICES</a></a></li>
+</ul>
+<h1>AVENUE: GUEST DETAILS</h1>
+
+
+<DIV CLASS="grid-container">
+<div class="a1">
+<P ALIGN="CENTER"><B>AVENUE: GUEST ID</B></P>
+</div>
+
+<div class="a2">
+<FORM action="" method="">
+ROOM NUMBER:
+<INPUT TYPE="TEXT" placeholder="201" size="6">
+<BR>
+BLOCK:
+<INPUT TYPE="TEXT" placeholder="B" size="2">
+</div>
+
+<div class="a3">
+<p align="center">
+<img src="main.jpg" height="200" width="400">
+</p>
+</div>
+
+<div class="a4">
+<FORM action="" method="">
+GUEST ADHAAR:
+<INPUT TYPE="TEXT" placeholder="0000-1111-2222" size="14">
+</div>
+
+<div class="a5">
+DATE OF BOOKING:
+<INPUT TYPE="date">
+</div>
+
+<div class="a6">
+<FORM action="" method="">
+SERVICE TYPE:<br>
+Premium
+<INPUT TYPE="radio" name="y" checked>
+  General
+  <INPUT TYPE="radio" name="y" checked>
+
+</div>
+
+<div class="a7">
+DATE OF EXP. OF BOOKING:
+<INPUT TYPE="date" >
+</div>
+<div class="a8">
+RENEWABLE:
+<BR>
+YES:
+<INPUT TYPE="RADIO" NAME="Y" CHECKED>
+NO:
+<INPUT TYPE="RADIO" NAME="Y" CHECKED>
+</div>
+<br>
+<br>
+  <input type="submit" value="SUBMIT" align="center" onclick="aa()">
+ 
+
+  
+  <script>
+    function aa(){
+      
+      alert("Your record has been submitted.")
+      alert(":)THANKYOU:)");
+    }
+  </script>
+  </body>
+</html>

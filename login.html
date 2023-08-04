@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>
+            AVENUE: LOGIN
+        </title>
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <ul>
+            <li><a><a href="index.html">HOME</a></li>
+        </ul>
+        <div class="login">
+            <h1>AVENUE: GUEST LOGIN</h1>
+            <form>
+                <p>USERNAME / ID</p>
+                    <input type="text" id="username" value="G" name="username" placeholder="Enter your username">
+                    <p>PASSWORD</p>
+                    <input type="password" name="password" placeholder="Enter your password" id="password">
+                    <input type="submit" value="LOGIN" onclick="login()">
+                    <br>
+                    
+                    <a href="forget.html">forgot password</a>
+                     <br>
+                    <a href="new.html">create a new account</a>
+
+            </form>
+        </div>
+        <script>
+            function login()
+            {
+            var a=document.getElementById('username').value
+            var b=document.getElementById('password').value
+            if(a==""||b=="")
+            {
+            alert("!!! Please fill the details !!!");
+            }
+            
+            else
+            if(a=="GUEST" && b=="12345")
+            {
+            window.open("gservice.html");
+            }
+            else
+            if(a!=""&&b!="")
+            {
+            window.open("manager.html");
+            }
+            
+            else
+            {
+            alert("wrong id/password");
+            }
+            
+            }
+            </script>
+    </body>
+</html>
